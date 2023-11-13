@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>up and down</title>
+    <style>
+        div{
+            height: 120px;
+            width: 120px;
+            color: rgb(218, 238, 196);
+            font-size: 1.5rem;
+            border: 2px solid black;
+            background: red;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">Click me</div>
+
+    <script>
+        function mDown(obj){
+            obj.innerHTML = "hello world";
+        }
+
+        function mUp(obj){
+            obj.innerHTML = "Thanks";
+        }
+    </script>
+</body>
+</html>
